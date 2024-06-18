@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+  --theme-color: #068FFF;
+  --title-color: #001524;
+  --text-light: #fff;
+  --text-dark:var(--title-color);
+  --text-link: #0000EE;
+  --hr-color: #c4c1c1;
+  --bg-light: #fff;
+}
+
+/* HEADER CSS */
+
+.header{
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: 1rem .5rem;
+  background-color: var(--title-color);
+}
+
+/* header-top  */
+
+.header-top{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-light);
+}
+
+.header-contact{
+  width: 50%;
+}
+.contact-container{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.header-contact .vr{
+  width: .01rem;
+  height: 1rem;
+  border-radius: 2rem;
+  background-color: var(--hr-color);
+}
+
+.header-contact div a{
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.fa-envelope,.fa-phone{
+  color: var(--text-link);
+}
+
+.header-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.social-links{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: var(--text-light);
+  transition: all;
+}
+
+.social-links a:hover{
+  color: var(--text-link);
+}
+
+.header .hr{
+  height: .015rem;
+  width: 98%;
+  border-radius: 2rem;
+  margin: auto ;
+  background-color: var(--hr-color);
+}
+
+/* header-navigation */
+
+.header-nav{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo, .contact-btn{
+  margin: 0 2rem;
+}
+.nav-links{
+  flex: 1;
+}
+.nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-links ul li{
+  position: relative;
+  list-style: none;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav-links ul li a:hover ~ .dropdown-menu{
+  transform: scaleY(1);
+}
+
+.nav-links ul li .dropdown-menu{
+  position: absolute;
+  left: -50%;
+  top: 220%;
+  text-wrap: nowrap;
+  padding: 1rem;
+  display: block;
+  background-color: var(--bg-light);
+  box-shadow: .15rem .15rem 1rem var(--title-color);
+  transform: scaleY(0);
+  transition: all;
+}
+.nav-links ul li .dropdown-menu li a{
+  line-height: 2rem;
+  color: var(--text-dark);
+}
+
+.contact-btn a button{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: .2rem;
+  color: var(--text-light);
+  background-color: var(--theme-color);
+  position: relative;
+  cursor: pointer;
+}
+.contact-btn a button::after{
+  content: "CONTACT US";
+  height: 100%;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--bg-light);
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .2rem;
+  transition: width .3s ease-in;
+}
+
+.contact-btn a button:hover::after{
+  width: 100%;
+  color: var(--text-dark);
+}
+
