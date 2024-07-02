@@ -11,8 +11,16 @@
   --text-light: #fff;
   --text-dark:var(--title-color);
   --text-link: #0000EE;
+  --smoke-color: #f5f7fa;
+  --smoke-color2: #e5f3ff;
   --hr-color: #c4c1c1;
   --bg-light: #fff;
+  --title-font: "Inter", sans-serif;
+  --form-color: rgb(245, 247, 250);
+  --section-title-space: 60px;
+  --section-space: 180px;
+  --body-font: "Poppins", sans-serif;
+
 }
 
 /* HEADER CSS */
