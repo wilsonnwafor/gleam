@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    color: white;
+}
+.home{
+    display: flex;
+    font-size: 20px;
+}
+.service{
+    color: white;
+    margin-top: 120px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    line-height: 75px;
+}
+.serv{
+    font-size: 35px;
+}
+.Our{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.box100{
+    display: grid;
+    grid-template-areas: 
+    "box box box"
+    "box box box";
+    gap: 1rem;
+    justify-content: space-around; 
+}
+.see{
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(0, 163, 238);
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.responsive{
+    background-image: url(../img/bg/breadcumb-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding: 100px 0px 100px 0px;
+    margin-top: -120px;
+}
+.sub0{
+    display: flex;
+}
+.aford{
+    margin-top: 80px;
+}
+.offer{
+    color: rgb(53, 103, 238);
+}
+.month{
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(53, 103, 238);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.mon{
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(6, 202, 6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+ .box{
+    box-shadow: -1px 0 10px rgb(226, 226, 226);
+    padding-bottom: 60px;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    /* margin-bottom: 50px; */
+    margin: 30px;
+   padding: 20px 20px 50px 20px;
+   cursor: pointer;
+   text-align: center;
+ }
+img {
+    width: 350px;
+ }
+ .hop:hover{
+    background-color: black;
+    cursor: pointer;
+ }
+ .box1{
+    text-align: center;
+    padding-bottom: 50px;
+    box-shadow: -1px 0 10px grey;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 60px;
+    background-color: rgb(225, 245, 250);
+    line-height: 50px;
+ }
+ .box2{
+    padding: 110px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+ }
+ .box0{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+ }
+ .box4{
+    margin: -20px;
+    border-radius: 10px;
+ }
+ .box5{
+    border-radius: 10px;
+    width: 400px;
+ }
+ .box6{
+    /* margin-top: 40px; */
+    line-height: 30px;
+    padding: 30px 20px 5px 20px;
+    margin: -10px;
+ }
+ .ul{
+    list-style: none;
+    line-height: 30px;
+ }
+ .hop{
+   padding: 15px 20px 15px 20px;
+   background-color: rgb(0, 132, 255);
+   border: none;
+   border-radius: 5px;
+   color: white;
+ }
+ .hop:hover{
+   background-color: black;
+   animation: bubble 0.4s ease-out;
+   cursor: pointer;
+   transition: all 0.5s;
+   transform: scale(1.02);
+ }
+ .see:hover{
+   background-color: rgb(6, 202, 6);
+   transition: 0.5s ease-in-out;
+ }
+
+ .box1:hover{
+   background-color: blue;
+   transition: 1s ease-in-out;
+   transform: scale(1.05);
+   transition: 1s all;
+   color: white;
+ }
+ .box2:hover{
+   background-color: white;
+   transition: 1s;
+   animation: backwards;
+   color: black;
+   transform: scale(1.02);
+   transition: 1s all;
+ }
+ .box4:hover{
+   transform: scale(1.03);
+   transition: 0.5s all;
+ }
+ .ul::before{
+   content: 2716;
+ }
+.get{
+   padding: 15px 25px 15px 25px;
+   background-color: rgb(0, 132, 255);
+   cursor: pointer;
+   border: none;
+   border-radius: 15px;
+   color: white;
+}
+.get:hover{
+   background-color: white;
+   color: black;
+}
+.dolls{
+   font-size: 20px;
+}
+.build{
+   font-size: 70px;
+   margin: -40px;
+}
+.link{
+   text-decoration: none;
+   color: white;
+}
+.exclusive{
+   margin: 30px;
+}
+@media (max-width: 600px) {
+   .box100{
+      display: grid;
+      grid-template-areas: 
+      "box"
+      "box"
+      "box"
+      "box"
+      "box"
+      "box";
+      margin: 20px 0px 20px 0px;
+   }
+   .serv{
+      font-size: 25px;
+   }
+   .home{
+      font-size: 15px;
+   }
+   .hap{
+      font-size: 25px;
+   }
+   .exclusive{
+      font-size: 15px;
+      text-align: center;
+   }
+   .sub0{
+      display: grid;
+      gap: 10px;
+      text-align: center;
+      
+   }
+   .box0{
+      display: grid;
+   }
+   .box1{
+      padding: 90px;
+    }
+}
+@media (min-width: 601px) {
+   .box100{
+      display: grid;
+      grid-template-areas: 
+      "box"
+      "box"
+      "box"
+      "box"
+      "box"
+      "box";
+      margin: 60px;
+   }
+   .serv{
+      font-size: 30px;
+   }
+   .home{
+      font-size: 18px;
+   }
+   .hap{
+      font-size: 35px;
+   }
+   .sub0{
+      display: grid;
+      gap: 10px;
+      text-align: center;
+      
+   }
+   .exclusive{
+      font-size: 19px;
+      text-align: center;
+   }
+   .box0{
+      display: grid;
+   }
+   .box1{
+      padding: 80px;
+    }
+}
+@media (min-width: 768px) {
+   .box100{
+      display: grid; 
+      grid-template-areas: 
+      "box box"
+      "box box"
+      "box box";
+      margin: 50px 0px 20px 0px;
+   }
+   .box{
+      padding: 20px 8px 50px 8px;
+      margin: 20px 0px 20px 0px ;
+   }
+   .box5{
+      width: 340px;
+   }
+   .box0{
+      display: grid;
+      grid-template-areas: 
+      "box1 box1"
+      "box1 box1";
+   }
+   .box1{
+      padding: 60px;
+    }
+}
+@media (min-width: 998px) {
+   .box100{
+      display: grid;
+      grid-template-areas: 
+      "box box box"
+      "box box box";
+   }
+   .box{
+      padding: 20px 18px 50px 18px;
+      margin: 20px 0px 20px 0px ;
+      font-size: 14px;
+   }
+   .box5{
+      width: 320px;
+   }
+   .serv{
+      font-size: 45px;
+   }
+   .home{
+      font-size: 20px;
+   }
+   .box0{
+      display: grid;
+      grid-template-areas: 
+      "box1 box1 box1";
+   }
+   .box1{
+      padding: 30px;
+    }
+}
+@media (min-width: 1232px) {
+   .box100{
+      display: grid;
+      grid-template-areas: 
+      "box box box"
+      "box box box";
+     
+   }
+   .box{
+      padding: 20px 20px 50px 20px;
+      margin: 20px 0px 20px 0px ;
+   }
+   .box5{
+      width: 400px;
+   }
+   .box0{
+      display: grid;
+      grid-template-areas: 
+      "box1 box1 box1";
+   }
+   .box1{
+      padding: 80px;
+    }
+}
