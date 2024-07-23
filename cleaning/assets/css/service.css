@@ -1,7 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url(style.css);
+
+
 .first{
     color: white;
 }
@@ -45,9 +44,9 @@
 .responsive{
     background-image: url(../img/bg/breadcumb-bg.jpg);
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-size: cover;
+    background-position: center;
     padding: 100px 0px 100px 0px;
-    margin-top: -120px;
 }
 .sub0{
     display: flex;

@@ -1,15 +1,12 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+@import url(style.css);
+
+
 .responsive{
     background-image: url(../img/bg/breadcumb-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 100px 0px 100px 0px;
-    margin-top: -120px;
-    /* height: 300px; */
     width: 100%;
 }
 .home{
@@ -29,10 +26,6 @@
 .img{
     width: 750px;
 }
-/* .first{
-    justify-content: space-around;
-    border: 2px solid red;
-} */
 .box4{
     margin: -20px;
     border-radius: 10px;
@@ -47,18 +40,12 @@
  .div{
     display: flex;
     margin-top: 50px;
-    /* justify-content: space-around; */
  }
  .box{
-    /* text-align: center; */
-    /* border: 1px solid red; */
-    padding: 0px 0px 60px 0px;
-    /* box-shadow: -1px 0 10px black; */
-   
+    padding: 0px 0px 60px 0px; 
 }
 .expert{
     display: flex;
-    /* justify-content: space-between; */
     gap: 0.5rem;
     margin: 40px 20px 40px 0px;
 }
@@ -92,7 +79,6 @@
     border-radius: 20px;
 }
 .offer{
-    /* border: 2px solid red; */
     margin-top: 20px;
     background-color: rgb(241, 241, 241);
     padding: 10px;
@@ -106,7 +92,6 @@
 }
 .search{
     padding: 25px 60px 25px 60px;
-    /* border: 1px solid black; */
     margin-bottom: 50px;
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
@@ -119,7 +104,6 @@
     
 }
 .want{
-    /* border: 1px solid black; */
     margin-top: 30px;
     padding: 17px;
     margin: 10px 30px 10px 30px;
@@ -135,7 +119,6 @@
      color: rgb(0, 153, 255);
 }
 .Categories{
-    /* border: 1px solid black; */
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
     margin-bottom: 90px;
@@ -358,7 +341,6 @@
         }
         .ul{
             font-size: 17px;
-            /* margin: 30px 60px 30px 60px; */
             margin-top: -10px;
             margin: -40px 60px 30px 60px;
         }
@@ -391,7 +373,6 @@
             font-size: 12px;
             justify-content: center;
             padding: 10px -20px 10px 30px;
-            /* margin: 30px 60px -10px 60px; */
             margin: 30px 130px 30px 60px;
         }
         .search{
@@ -408,7 +389,6 @@
         }
         .band{
             width: 400px;
-            /* margin: 20px 130px 20px 20px; */
             justify-content: space-around;
         }
         .office{
@@ -421,7 +401,6 @@
         .expert1{
             display: grid;
             padding: 10px 50px 10px 20px;
-            /* margin:  30px 60px 30px 60px; */
         }
         .member{
             padding: 4px;
@@ -439,9 +418,6 @@
             margin: -20px;
         }
         .are{
-            
-            /* margin: 20px 20px -20px 20px; */
-            /* margin: 50px; */
             margin: 30px 130px 30px 20px;
         }
         .box1{
@@ -469,8 +445,6 @@
      }
      .ul{
          font-size: 18px;
-         /* margin: 30px 60px 30px 60px; */
-         /* margin-top: 40px; */
          margin: 40px 5px 30px -20px;
      }
      .box{
