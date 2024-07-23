@@ -6,11 +6,11 @@
 }
 
 :root{
-  --theme-color: #068FFF;
-  --title-color: #001524;
+  --theme-color: #14a7cc;
+  --title-color: #002253;
   --text-light: #fff;
   --text-dark:var(--title-color);
-  --text-link: #0000EE;
+  --text-link: #abdfec;
   --smoke-color: #f5f7fa;
   --smoke-color2: #e5f3ff;
   --hr-color: #c4c1c1;
@@ -21,6 +21,7 @@
   --section-title-space: 60px;
   --section-space: 180px;
   --body-font: "Poppins", sans-serif;
+  --accent-color: #00ff00;
 }
 
 /* HEADER CSS */
@@ -98,13 +99,14 @@
 }
 
 .header-contact div a{
-  color: var(--text-light);
+  color: var(--text-link);
   text-decoration: none;
 }
 
 .header-contact .phone,
 .header-contact .email{
   text-wrap: nowrap;
+  color: var(--text-link);
 }
 
 .fa-envelope,.fa-phone{
@@ -128,7 +130,7 @@
 
 .social-links a{
   text-decoration: none;
-  color: var(--text-light);
+  color: var(--text-link);
   transition: all;
 }
 
@@ -180,7 +182,7 @@
 .nav-links ul li a{
   text-decoration: none;
   color: var(--text-light);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 
@@ -199,7 +201,6 @@
   }
   .header .header-nav .nav-links ul{
     flex-wrap: nowrap;
-    /* gap: 1rem; */
     width: 100%;
   }
   .header .header-nav .nav-links ul li a{
@@ -273,7 +274,7 @@
   border: none;
   border-radius: .2rem;
   color: var(--text-light);
-  background-color: var(--theme-color);
+  background-color: #14a7cc;
   position: relative;
   cursor: pointer;
 }
@@ -329,7 +330,7 @@
   z-index: 10;
 }
 .side-bar-container.clicked{
-  height: 100vh;
+  height: 120vh;
 }
 .side-bar-container .sidebar{
   width: 70%;
@@ -418,9 +419,12 @@ footer{
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: var(--title-color);
+  /* background-color: var(--title-color); */
+  background: linear-gradient(to bottom right, #002253, #14a7cc);
   color: var(--text-light);
   z-index: 0;
+  border-top-right-radius: 10rem ;
+  border-top-left-radius: 10rem ;
 }
 
 .footer-contact{
@@ -450,8 +454,10 @@ footer .contact-icon{
   align-items: center;
   justify-content: center;
   background-color: #023A65;
-  border-radius: .5rem;
+  border-radius: .9rem;
   font-size: 3rem;
+  border: .1rem solid var(--theme-color);
+  box-shadow: .6rem .7rem 3rem rgba(0, 0, 0, 0.329);
 }
 footer .contact-icon i{
   color: var(--text-light);
@@ -468,7 +474,11 @@ footer .contact-text a{
   color: var(--text-light);
   text-decoration: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  footer{
+    border-top-right-radius: 6rem ;
+    border-top-left-radius: 6rem ;
+  }
   .footer-contact .address,
   .footer-contact .contact,
   .footer-contact .opening-time{
@@ -484,6 +494,10 @@ footer .contact-text a{
   }
 }
 @media (max-width: 600px) {
+  footer{
+    border-top-right-radius: 4rem ;
+    border-top-left-radius: 4rem ;
+  }
   .footer-contact{
     flex-direction: column;
     gap: 2rem;
@@ -503,9 +517,6 @@ footer .contact-text a{
   height: fit-content;
   width: 90%;
   margin: auto;
-  /* display: flex;
-  align-items: start;
-  justify-content: space-around; */
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -514,7 +525,6 @@ footer .contact-text a{
 .footer-info .footer-newsletter,
 .footer-info .footer-services,
 .footer-info .footer-company-policy{
-  /* width: 25%; */
   padding: 5rem 2rem;
 }
 
@@ -558,6 +568,12 @@ footer .contact-text a{
   align-items: center;
   justify-content: center;
   border-radius: .2rem;
+  transform: scale(0.98);
+  transition: all .4s;
+}
+.footer-info .footer-newsletter .input:hover{
+  box-shadow: .6rem .7rem 3rem rgba(0, 0, 0, 0.479);
+  transform: scale(1) translateY(-.5rem);
 }
 .footer-info .footer-newsletter .input input{
   flex: 1;
@@ -607,7 +623,7 @@ footer .contact-text a{
   justify-content: center;
   background-color: black;
 }
-@media (max-width:900px) {
+@media (max-width:1000px) {
   .footer-info{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
