@@ -22,7 +22,7 @@
 .about-banner p{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(48, 44, 44, 0.521);
-     width: 18%; 
+    width: 18%;
     height: 10vh;
     border: none;
     padding: 30px 0 0 40px;
@@ -43,7 +43,7 @@
     .about-banner p{
         font-family: Arial, Helvetica, sans-serif;
          background-color: rgba(48, 44, 44, 0.521); 
-        width: 50%;
+        width: 40%;
         height: 10vh;
         border: none; 
         padding: 30px 0 0 40px;
@@ -61,12 +61,10 @@
 }
 .about-page-img img{
     border-radius: 10px;
-    
-   
 }
 .img1-cont{
     max-width: 290px;
-    height: 30rem;
+    height: 70vh;
     border-radius:10px;
     border-style: dashed ;
     border-color: var(--text-link);
@@ -82,7 +80,7 @@
 }
 .cont2{
     max-width: 200px;
-    height: 16rem;
+    height: 36vh;
     border-radius:10px;
     border-style: dashed ;
     border-color: var(--text-link);
@@ -96,14 +94,11 @@
  .about-page-img{
     display: grid;
     grid-template-columns: auto auto;
-     column-gap: 30px; 
+    column-gap: 30px;
     max-width: 50%;
-    justify-items: center;
+    justify-content: space-around; 
+    align-content: center;
 } 
-.company-history{
-    width: 90%;
-    margin: auto;
-}
 
 @media(max-width:600px){
     .about-section{
@@ -111,7 +106,7 @@
     }
     .img1-cont{
         max-width: 202px;
-        height: 21rem;
+        height: 50vh;
         border-radius:10px;
         border-style: dashed ;
         border-color: var(--text-link);
@@ -123,7 +118,7 @@
     }
     .cont2{
         max-width: 130px;
-        height: 12rem;
+        height: 28vh;
     }
     .cont3 img{
         max-width: 130px;
@@ -139,19 +134,9 @@
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 20px;
-        
-      
-        
+        justify-content: space-around;
+        align-content: center;
     } 
-    .about-block{
-        margin: auto;
-     width: 100%;
-        justify-content: center;
-    }
-    .company-history{
-        width: 90%;
-        margin: auto;
-    }
 } 
 
 
@@ -217,8 +202,8 @@
     .sec-title{
         font-size: 25px;
     }
-    .sec-btn{
-        width:15%;
+    .th-btn{
+        width:35%;
         height: 8vh;
     
     }
@@ -293,17 +278,15 @@
 
     .out-team{
         margin-top: 8%;
-        padding-left: 5%;
     }
-    .sec-btn2{
+    .sec-btn{
         width:15%;
         height: 8vh;
         background-color: var(--theme-color);
         border-radius: 6px;
         text-align: center;
-        
     }
-    .sec-btn2 a{
+    .sec-btn a{
         text-decoration: none;
         color: var(--text-light);
         font-size: 18px;
@@ -311,16 +294,13 @@
         position: relative;
         top: 18px;
     }
-    .sec-btn2:hover{
+    .sec-btn:hover{
         background-color: var( --title-color);
         transition-duration: 1s;
     }
     .expert-team{
         display: flex;
-        width: 95%;
-        padding-left: 5%;
         justify-content: space-between;
-        /* gap: 40%; */
         margin-top: 1%;
     }
     @media(max-width:600px){
@@ -328,9 +308,8 @@
             display: block;
             text-align: center;
         } 
-        .sec-btn2{
-            margin: auto; 
-            width: 80%; 
+        .sec-btn{
+           margin: auto;
         }
         .out-team{
             text-align: center;
@@ -344,9 +323,9 @@
             display: block;
             text-align: center;
         } 
-         .sec-btn2{
+         .sec-btn{
             margin: auto;
-            width: 40%;
+            width: 25%;
         }
     } 
 
@@ -363,15 +342,14 @@
     }
     
     .flex4-sec1 {
-        color: var(--text-light);
+        color: var(--hr-color);
         width: 80%;
-        height:15rem;
-        background-color: var(--theme-color);
+        height:38vh;
+        background-color: rgba(128, 128, 128, 0.24);
         border-radius: 10px;
         text-align: center;
-        padding-top: 50px;
-         margin-top: 10px;
-         line-height: 1.3rem; 
+        padding-top: 40px;
+         margin-top: 10px; 
     }
     
     .flex4 img {
@@ -394,21 +372,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-     gap: 20px;   
+     gap: 40px;   
 }
 .flex4-sec1 {
-    color: var(--text-light);
+    color: var(--hr-color);
     width: 80%;
-    height:15rem;
-    background-color: var(--theme-color);
+    height:40vh;
+    background-color: rgba(128, 128, 128, 0.24);
     border-radius: 10px;
     padding: 30px;
     margin-top: 10px;
     text-align: center;
-     line-height: 1.3rem; 
 }
-    }
-    footer{
-        margin-top: 10%;
     }
     
