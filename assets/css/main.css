@@ -627,6 +627,7 @@
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
+  text-align: center ;
 }
 
 .enquiry p{
@@ -643,4 +644,12 @@
   background-color: var(--theme-color);
   color: var(--text-light);
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .enquiry p{
+    font-size: 1.5rem;
+  }
+  .enquiry a button{
+    font-size: 1rem;
+  }
 }
