@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gleamify</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Book With Us</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-  </style>
-  <script defer src="assets/js/index.js"></script>
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
   <header class="header">
@@ -109,151 +105,42 @@
       </ul>
     </div>
   </nav>
-  <main>
-    <section class="hero-banner">
-      <div class="hero-intro">
-        <div class="hero-text">
-          <p>CLEAN YOUR HOME</p>
-          <h1>We Are Here With Expert <span>Cleaner</span></h1>
-        </div>
-        <div class="cta-btn">
-          <a href="/booking.html">
-            <button>GET A QUOTE</button>
-          </a>
-        </div>
-        <div class="work-done">
-          <div class="counter">
-            <h3>55k</h3>
-            <p>Project Completed</p>
-          </div>
-          <div class="counter">
-            <h3>150</h3>
-            <p>Expert Cleaner</p>
-          </div>
-          <div class="counter">
-            <h3>50k</h3>
-            <p>Satisfied Customer</p>
-          </div>
-        </div>
+  <div class="form-cont">
+    <form action="#">
+      <div class="logo">
+        <img src="assets/img/FirstLogo-Gleamify.png" alt="logo">
       </div>
-      <div class="hero-mockup">
-        <img src="assets/img/hero/hero_2_1.png" alt="">
+      <h3>Get A <span>Booking</span></h3>
+      <div class="name-input">
+        <label for="name">Name <span>*</span></label>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required>
       </div>
-    </section>
-    <section class="home-services">
-      <div class="services-text">
-        <div class="text">
-          <p>OUR SERVICES</p>
-          <h1>Trusted Cleaning <span>Service</span> On Your Door</h1>
-        </div>
-        <div class="carousel-btns">
-          <button class="btn-prev"><i class="fa-solid fa-arrow-left"></i></button>
-          <button class="btn-next"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
+      <div class="email-input">
+        <label for="email">Email <span>*</span></label>
+        <input type="text" id="email" placeholder="Enter your email" name="email" required>
       </div>
-      <div class="services-carousel">
-        <div class="carousel-cont">
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_1.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_2.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_3.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_4.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_5.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img">
-              <img src="assets/img/service/service_card_6.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>House Cleaning</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quas.</p>
-              <a href="#">
-                <button>Learn More</button>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="selections">
+        <select class="services" id="service">
+          <option value="" selected>Home Cleaning</option>
+          <option value="">Office Cleaning</option>
+          <option value="">Kitchen Cleaning</option>
+          <option value="">Bathroom Cleaning</option>
+          <option value="">Window Cleaning</option>
+          <option value="">Others</option>
+        </select>
+        <select class="time-of-day" id="">
+          <option value="" selected>Any Time Of Day</option>
+          <option value="">Morning</option>
+          <option value="">Afternoon</option>
+          <option value="">Evening</option>
+        </select>
       </div>
-    </section>
-    <section class="home-about">
-      <div class="about-mockups">
-        <div class="mockup-1">
-          <img src="./assets/img/mockups/VanMockup-Gleamify.jpg" alt="">
-        </div>
-        <div class="mockup-2">
-          <div class="mockup">        
-            <img src="./assets/img/mockups/Detergent-Gleamify.jpg" alt="">
-          </div>
-          <div class="mockup">
-            <img src="./assets/img/mockups/Gleamify 1mockup.jpg" alt="">
-          </div>
-        </div>
+      <div class="text-details">
+        <textarea name="" id="text-box" placeholder="Add any more reqired details Here(optional)" ></textarea>
       </div>
-      <div class="about-us">
-        <p class="title">ABOUT US</p>
-        <h1 class="heading">Over 35 Years Leading in <span>Cleaning</span> Industry</h1>
-        <p class="about-text">Welcome to our cleaning service company, where we bring over 25 years of expertise to every job. Our dedicated team ensures your space is impeccably clean, creating a healthier environment for all. where we bring over 25 years of expertise to every dedicated job.</p>
-        <a href="/about.html"><button>MORE DETAILS</button></a>
-      </div>
-    </section>
-    <section class="enquiry">
-      <P>Ready To Make a Booking?</P>
-      <a href="/booking.html"><button>Get A Quote</button></a>
-    </section>
-  </main>
+      <button>Submit</button>
+    </form>
+  </div>
   <footer>
     <div class="footer-contact">
       <div class="address">
