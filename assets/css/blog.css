@@ -69,9 +69,11 @@
  
  .main-container{
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin-top: 120px;
   gap: 20px;
+  background-color: white;
  }
  .blog-container{
   width: 55%;
@@ -165,13 +167,18 @@
 
 
  .blog-container-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   width: 40%;
-  background-color: var(--form-color);
-  height: 470px;
+  background-color: white;
+  height: auto;
   border-radius: 10px;
-  margin-top: 350px;
  }
  .recent{
+  background-color: var(--form-color);
   padding: 30px;
  }
  .blog-container-2 h3{
@@ -216,10 +223,9 @@
  }
  .widget{
   background-color: var(--form-color);
-  margin-top: 150px;
   height: 300px;
-  padding: 30px;
   border-radius: 10px;
+  padding: 1rem;
  }
  .va{
   border-bottom: 3px solid var(--hr-color);
